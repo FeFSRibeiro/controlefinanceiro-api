@@ -1,9 +1,9 @@
-package br.fefsribeiro.controle.financeiro.api.model;
+package br.fefsribeiro.controle.financeiro.api.application.core;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Generated;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -11,9 +11,11 @@ import java.time.LocalDate;
 
 @Builder
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "receitas")
-public class Receita {
+@Table(name = "despesas")
+public class Despesa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,4 +26,5 @@ public class Receita {
     private BigDecimal valor;
 
     private LocalDate data;
+
 }
