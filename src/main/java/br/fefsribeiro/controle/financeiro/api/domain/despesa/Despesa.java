@@ -1,4 +1,4 @@
-package br.fefsribeiro.controle.financeiro.api.application.core;
+package br.fefsribeiro.controle.financeiro.api.domain.despesa;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
